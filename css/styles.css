@@ -42,7 +42,65 @@
 .menu ul li:hover{
     background: lightgray;
 }
+/*------------------Angularstyles-----------------------*/
 
+.header-prop{
+    height: 90px;
+    background: #3D9970;
+    text-align: center;
+    line-height: 88px;
+    color:white;
+}
+.list-prop{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.comp-lst{
+    line-height: 28px;
+    padding-top: 20px;
+    border-bottom: 1px solid dimgray;
+    font-family: Arial;
+    color: gold;
+    cursor: pointer;
+}
+
+/*color css*/
+.back-black{
+    background:#100e0e;
+}
+
+
+/*core css*/
+.col-mar{
+    margin: 0px;
+}
+.col-pad{
+    padding-left: 50px;
+}
+.title-pro{
+    padding-right: 118px;
+    margin: 0px;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.lst-posi{
+   position: fixed;
+    top: 90px;
+    height:  575px;
+    overflow: scroll;
+    display: block;
+}
+.comp-container{
+    position: absolute;
+    left: 225px;
+    top: 89px;
+}
 
 /*-----------------------------buttons styles-------------------------------------*/
  .btn-sec{
@@ -800,7 +858,7 @@
     background: gray;
     }
 .har-nav{
-    width: 46%;
+    width: 48%;
     /* height: 45px; */
     padding: 0;
     background: darkcyan

@@ -2,11 +2,9 @@
 <html>
 <head>
     <title>ComponentsList</title>
-    <link rel="stylesheet" type="text/css" href="../samplepage/core.css">
-	<link rel="stylesheet" type="text/css" href="../samplepage/styles.css">
-	<link rel="stylesheet" type="text/css" href="../samplepage/color.css">
-    <link rel="stylesheet" type="text/css" href="AngularComponentsList.css">
-	<script src="../samplepage/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/core.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/color.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body ng-app="compApp" ng-controller="compController" >
@@ -520,46 +518,7 @@
     </div>
     </div>
 </body>
-<script src="angular.min.js"></script>
-<script src="AngularComponentsList.js"></script>
-<script>
-/*------Accordion------*/
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  }
-}
-
-/*---- coursoel--------*/
-    var slideIndex = 1;
-	showImg(slideIndex);
-	function slideImages(number) {
-	  showImg(slideIndex += number);
-	}
-
-	function showImg(number) {
-	  var elements = document.getElementsByClassName("slides");
-	  if (number > elements.length) {
-	  	slideIndex = 1
-	  }    
-	  if (number < 1) {
-	  		slideIndex = elements.length
-	  	}
-	  var x;
-	  for (x = 0; x < elements.length; x++) {
-	     elements[x].style.display = "none";  
-	  }
-	  elements[slideIndex-1].style.display = "block"  
-}
-
-</script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/AngularComponentsList.js"></script>
+<script src="../js/script.js"></script>
 </html>
